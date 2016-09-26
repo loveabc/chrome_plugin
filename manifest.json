@@ -1,0 +1,17 @@
+{
+  "name": "My extension",
+  "version":"0.0",
+  "manifest_version":2,
+  "content_scripts": [
+    {
+      "matches": ["https://www.baidu.com/*"],
+      "js": ["jquery-1.9.1.js", "baidu.js"],
+      "run_at":"document_end"
+    },
+     {
+      "matches": ["http://10.20.35.1:9080/html/CM/ModifySQL.jsp"],
+      "js": ["jquery-1.9.1.js", "crm.js"],
+      "run_at":"document_end"
+    }
+  ]
+}
